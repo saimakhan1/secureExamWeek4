@@ -1,3 +1,7 @@
+Live Link by Saima Khan: https://online-secure-exam.vercel.app/
+
+Live Link by Abir: https://secure-exam-online-examination-plat-jade.vercel.app/
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
