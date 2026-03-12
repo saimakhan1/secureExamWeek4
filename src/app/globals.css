@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #c7ecee;
+
+  --color-secondary: #0f766e;
+}
+
+/* ✅ Custom class outside daisy theme */
+.gradient-badge {
+  background: linear-gradient(135deg, #d7c3f1 0%, #bde8ca 100%);
+  color: #0d7c66;
+}
+
+.gradient-button-primary {
+  background: linear-gradient(135deg, #0d7c66 0%, #41b3a2 100%);
+  transition: all 0.3s ease;
+  background-size: 200% auto;
+}
+
+.gradient-button-primary:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(13, 124, 102, 0.3);
+}
+
+.gradient-button-secondary {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid #41b3a2;
+  color: #0d7c66;
+  transition: all 0.3s ease;
+}
+
+.gradient-button-secondary:hover {
+  background: linear-gradient(135deg, #41b3a2 0%, #0d7c66 100%);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #f0f9f4 0%, #e6f3ff 50%, #f3e8ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 80%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(65, 179, 162, 0.1) 0%,
+    rgba(215, 195, 241, 0.1) 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 60%;
+  height: 150%;
+  background: radial-gradient(
+    circle,
+    rgba(13, 124, 102, 0.08) 0%,
+    rgba(189, 232, 202, 0.08) 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+}
